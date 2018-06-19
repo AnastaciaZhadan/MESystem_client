@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/chat_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="489dp"
+        android:background="#ffffff"
+        android:dividerHeight="0dp"
+        android:divider="@color/colorAccent"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout2">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/enterMes_editText"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corners"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/background_floating_material_dark"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:id="@+id/sendMes_button"
+            android:background="@drawable/rounded_button"
+            android:textColor="#00907c" />
+    </LinearLayout>
+
+</RelativeLayout>
